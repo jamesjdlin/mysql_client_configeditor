@@ -26,3 +26,9 @@ By running the command build.sh, you can get the docker image build-up as requir
 As the docker image name specified in no matter Dockerfile or command parameter of "docker build", you could have image created in your local repository as need.
 
 As the practice of Dockerfile, you had better to run all of the commands castcaded rather than separately thus && is essentially in RUN action.
+
+To create <.mylogin.cnf> no matter by Docker or your other host environment, you can put it into Dockerfile as to make it more convenient of running.
+
+For example, you could use "mysql_config_editor set --login-path=eai --host=localhost --port=3306 --user --password" and pass-code entered to generate you <.mylogin.cnf> file as required.
+
+After login path created through mysql_config_editor, save it under your root directory of docker
